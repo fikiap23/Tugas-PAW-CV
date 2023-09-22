@@ -5,29 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae</title>
     <style>
+      /* CSS untuk tampilan desktop */
       .container {
-        padding: 50px;
-        border: 5px solid #16a34a;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #f0f0f0;
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      }
+
+      .content {
+        border: 5px solid #0d9488;
+        padding: 10px;
+        flex: 2;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 20px;
+        background-color: #0d9488;
+        color: #ffffff;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;
       }
 
       table {
         border-collapse: collapse;
         width: 100%;
+        margin-top: 20px;
       }
 
       th,
       td {
-        border: 1px solid transparent;
+        border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
       }
 
       th {
-        background-color: #f2f2f2;
+        background-color: #0d9488;
+        color: #ffffff;
       }
 
       h2 {
-        color: #16a34a;
+        color: #0d9488;
       }
 
       .about {
@@ -41,7 +72,7 @@
       }
 
       a {
-        color: #16a34a;
+        color: #0d9488;
         text-decoration: none;
       }
 
@@ -49,199 +80,216 @@
         text-decoration: underline;
       }
 
-      img {
-        width: 200px;
-      }
-
-      .header {
-        background-color: #16a34a;
-        color: white;
-      }
-
-      /* Media query for mobile responsiveness */
-      @media (max-width: 600px) {
-        .about {
-          text-align: center;
-          margin-top: 20px;
-        }
-
+      /* CSS untuk tampilan mobile */
+      @media (max-width: 768px) {
         .container {
-          padding: 20px;
-        }
-
-        .header {
-          text-align: center;
-        }
-
-        table {
-          width: 100%;
-        }
-
-        td {
-          display: block;
-          width: 100%;
+          flex-direction: column;
+          align-items: center;
         }
       }
     </style>
   </head>
   <body>
+    <h1
+      style="
+        text-align: center;
+        margin: 20px;
+        font-variant: small-caps;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        background-color: #0d9488;
+        padding: 10px;
+      "
+    >
+      My Curriculum Vitae
+    </h1>
     <div class="container">
-      <h1
-        style="
-          text-align: center;
-          margin: 20px;
-          font-variant: small-caps;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-          color: #fff;
-          background-color: #16a34a;
-          padding: 10px;
-        "
-      >
-        My Curriculum Vitae
-      </h1>
+      <div class="sidebar">
+        <!-- Gambar -->
+        <img src="assets/fiki1.jpg" alt="Foto Profil" />
+        <div>
+          <h2 class="about">Tentang Saya</h2>
+          <p>
+            Halo, Saya Fiki Aprian, asal kota Garut. Saat ini, saya menempuh
+            pendidikan di UIN Sunan Gunung Djati dengan jurusan Teknik
+            Informatika. Saya memiliki Kegemaran dalam pengembangan web dan
+            mobile sangat mendalam. Perjalanan belajar pemrograman telah saya
+            jalani sejak masa sekolah menengah atas (SMA), walaupun pengalaman
+            saya di bidang ini masih terbatas, saya memiliki tekad kuat untuk
+            terus mengasah keterampilan ini ke tingkat yang lebih tinggi di masa
+            depan. Saya sangat antusias untuk dapat berkontribusi dalam
+            lingkungan profesional yang mendukung pertumbuhan dan pembelajaran.
+          </p>
+        </div>
 
-      <table>
-        <tr class="header">
-          <td style="width: 30%">
-            <!-- Profile -->
-            <img src="assets/fiki1.jpg" alt="Foto Profil" />
-          </td>
-          <td style="width: 70%">
-            <h2 class="about">Tentang Saya</h2>
+        <!-- Minat dan Hobi -->
+        <h2 class="about">Minat dan Hobi</h2>
+        <ul>
+          <li>Pengembangan Web</li>
+          <li>Pengembangan Aplikasi Mobile</li>
+          <li>Belajar Teknologi Terbaru</li>
+          <li>Membaca Buku Teknologi</li>
+          <li>Main catur</li>
+        </ul>
+
+        <!-- Proyek Pribadi -->
+        <h2 class="about">Proyek Pribadi</h2>
+        <ul>
+          <li>
+            <strong>Proyek Blog Pribadi</strong>
             <p>
-              Halo, Saya Fiki Aprian, asal kota Garut. Saat ini, saya menempuh
-              pendidikan di UIN Sunan Gunung Djati dengan jurusan Teknik
-              Informatika. Saya memiliki Kegemaran dalam pengembangan web dan
-              mobile sangat mendalam. Perjalanan belajar pemrograman telah saya
-              jalani sejak masa sekolah menengah atas (SMA), walaupun pengalaman
-              saya di bidang ini masih terbatas, saya memiliki tekad kuat untuk
-              terus mengasah keterampilan ini ke tingkat yang lebih tinggi di
-              masa depan. Saya sangat antusias untuk dapat berkontribusi dalam
-              lingkungan profesional yang mendukung pertumbuhan dan
-              pembelajaran.
+              Deskripsi: Saya telah membuat blog pribadi di mana saya berbagi
+              pengetahuan dan pengalaman saya dalam pemrograman dan teknologi.
             </p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <!-- Informasi Pribadi -->
-            <h2>Informasi Pribadi</h2>
-            <table>
-              <tr>
-                <th>Nama</th>
-                <td>Fiki Aprian</td>
-              </tr>
-              <tr>
-                <th>Tanggal Lahir</th>
-                <td>17 Agustus 1945</td>
-              </tr>
-              <tr>
-                <th>Alamat</th>
-                <td>
-                  Jl. Lewo wetan, Ds. Lewo Baru, Kec. Malangbong, Kab. Garut,
-                  Jawa Barat
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <!-- Pendidikan -->
-            <h2>Pendidikan</h2>
-            <table>
-              <tr>
-                <th>Gelar</th>
-                <th>Institusi</th>
-                <th>Tahun</th>
-              </tr>
-              <tr>
-                <td>Sarjana Teknik Informatika</td>
-                <td>Universitas Islam Negeri Sunan Gunung Jati</td>
-                <td>2021-2025</td>
-              </tr>
-              <tr>
-                <td>MIPA (Matematika dan Ilmu Pengetahuan Alam)</td>
-                <td>SMAN 9 Garut</td>
-                <td>2018-2021</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <!-- Pengalaman Kerja -->
-            <h2>Pengalaman Kerja</h2>
-            <table>
-              <tr>
-                <th>Jabatan</th>
-                <th>Perusahaan</th>
-                <th>Tahun</th>
-              </tr>
-              <tr>
-                <td>FullStack Developer</td>
-                <td>Perusahaan FA-Tech</td>
-                <td>2020-2021</td>
-              </tr>
-              <tr>
-                <td>Backend Developer</td>
-                <td>Perusahaan FA-Tech</td>
-                <td>2021-sekarang</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <!-- Kemampuan -->
-            <h2>Kemampuan</h2>
-            <ul>
-              <li>TailwindCSS, Bootstrap</li>
-              <li>Spring Boot, Laravel</li>
-              <li>ReactJS</li>
-              <li>Flutter</li>
-              <li>MySQL, PostgresSQL</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <!-- Kontak -->
-            <h2>Kontak</h2>
-            <table>
-              <tr>
-                <th>Email</th>
-                <td>fikiaprian23@gmail.com</td>
-              </tr>
-              <tr></tr>
-              <tr>
-                <th>Phone</th>
-                <td>+6287718447919</td>
-              </tr>
-              <tr>
-                <th>LinkedIn</th>
-                <td>
-                  <a
-                    href="https://www.linkedin.com/in/fiki-aprian-b8624b216/"
-                    target="_blank"
-                    >Fiki Aprian</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th>Web Portofolio</th>
-                <td>
-                  <a
-                    href="https://my-portofolio-fikiap23.vercel.app/"
-                    target="_blank"
-                    >My Portofolio</a
-                  >
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+            <p></p>
+          </li>
+          <li>
+            <strong>Portofolio Website</strong>
+            <p>
+              Deskripsi: Saya telah membuat situs web portofolio untuk
+              menampilkan proyek-proyek yang telah saya kerjakan.
+            </p>
+            <p>
+              Portofolio:
+              <a
+                style="color: #0c0c0c"
+                href="https://my-portofolio-fikiap23.vercel.app/"
+                target="_blank"
+                >https://my-portofolio-fikiap23.vercel.app/</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <!-- Informasi Pribadi -->
+        <h2>Informasi Pribadi</h2>
+        <table>
+          <tr>
+            <th>Nama</th>
+            <td>Fiki Aprian</td>
+          </tr>
+          <tr>
+            <th>Tanggal Lahir</th>
+            <td>15 Februari 2003</td>
+          </tr>
+          <tr>
+            <th>Alamat</th>
+            <td colspan="3">
+              Jl. Lewo wetan, Ds. Lewo Baru, Kec. Malangbong, Kab. Garut, Jawa
+              Barat
+            </td>
+          </tr>
+        </table>
+
+        <!-- Pendidikan -->
+        <h2>Pendidikan</h2>
+        <table>
+          <tr>
+            <th>Gelar</th>
+            <th>Institusi</th>
+            <th>Tahun</th>
+          </tr>
+          <tr>
+            <td>Sarjana Teknik Informatika</td>
+            <td>Universitas Islam Negeri Sunan Gunung Jati</td>
+            <td>2021-2025</td>
+          </tr>
+          <tr>
+            <td>MIPA (Matematika dan Ilmu Pengetahuan Alam)</td>
+            <td>SMAN 9 Garut</td>
+            <td>2018-2021</td>
+          </tr>
+        </table>
+
+        <!-- Pengalaman Kerja -->
+        <h2>Pengalaman Kerja</h2>
+        <ol>
+          <li>
+            <strong>Web Developer</strong>
+            <p>PT Tech Solutions</p>
+            <p>Januari 2023 - Desember 2024</p>
+            <p>
+              Bertanggung jawab atas pengembangan front-end dan back-end untuk
+              proyek-proyek klien. Memimpin tim pengembangan dalam merancang dan
+              mengimplementasikan solusi web yang inovatif. Memanfaatkan
+              teknologi terbaru seperti React, Spring boot, dan PostgreSQL untuk
+              meningkatkan efisiensi bisnis klien.
+            </p>
+          </li>
+          <li>
+            <strong>Mobile App Developer</strong>
+            <p>PT Mobile Innovations</p>
+            <p>Maret 2025 - Saat Ini</p>
+            <p>
+              Terlibat dalam pengembangan aplikasi mobile yang sangat kompleks
+              untuk klien besar. Merancang dan mengimplementasikan fitur-fitur
+              kreatif serta memastikan fungsionalitas yang optimal. Menggunakan
+              teknologi Flutter untuk pengembangan aplikasi iOS dan Android.
+            </p>
+          </li>
+        </ol>
+
+        <!-- Penghargaan dan Sertifikasi -->
+        <h2>Penghargaan dan Sertifikasi</h2>
+        <table>
+          <tr>
+            <th>Penghargaan</th>
+            <th>Tahun</th>
+            <th>Keterangan</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Penghargaan Karyawan Terbaik</td>
+            <td>2021</td>
+            <td>
+              Saya mendapatkan penghargaan karyawan terbaik dalam kategori
+              Pengembangan Web di PT Tech Solutions.
+            </td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>
+              Saya meraih penghargaan karyawan terbaik dalam kategori
+              Pengembangan Aplikasi Mobile di PT Mobile Innovations.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Sertifikasi Flutter Developer</td>
+            <td>
+              Saya mendapatkan sertifikasi Flutter Developer dari Google pada
+              tahun 2024.
+            </td>
+          </tr>
+        </table>
+
+        <!-- Kemampuan -->
+        <h2>Kemampuan</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Angular, Vue.js</li>
+          <li>Node.js, Express</li>
+          <li>Swift, Kotlin</li>
+          <li>MySQL, MongoDB</li>
+        </ul>
+
+        <!-- Kontak -->
+        <h2>Kontak</h2>
+        <ol>
+          <li>
+            Email:
+            <a href="mailto:fikiaprian23@gmail.com">fikiaprian23@gmail.com</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/fiki-aprian-b8624b216/"
+              target="_blank"
+              >https://www.linkedin.com/in/fiki-aprian-b8624b216/</a
+            >
+          </li>
+        </ol>
+      </div>
     </div>
   </body>
 </html>

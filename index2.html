@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <style>
+      .container {
+        padding: 50px;
+        border: 5px solid #16a34a;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid transparent;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      h2 {
+        color: #16a34a;
+      }
+
+      .about {
+        color: white;
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      a {
+        color: #16a34a;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 200px;
+      }
+
+      .header {
+        background-color: #16a34a;
+        color: white;
+      }
+
+      /* Media query for mobile responsiveness */
+      @media (max-width: 600px) {
+        .about {
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .container {
+          padding: 20px;
+        }
+
+        .header {
+          text-align: center;
+        }
+
+        table {
+          width: 100%;
+        }
+
+        td {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1
+        style="
+          text-align: center;
+          margin: 20px;
+          font-variant: small-caps;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          color: #fff;
+          background-color: #16a34a;
+          padding: 10px;
+        "
+      >
+        My Curriculum Vitae
+      </h1>
+
+      <table>
+        <tr class="header">
+          <td style="width: 30%">
+            <!-- Profile -->
+            <img src="assets/fiki1.jpg" alt="Foto Profil" />
+          </td>
+          <td style="width: 70%">
+            <h2 class="about">Tentang Saya</h2>
+            <p>
+              Halo, Saya Fiki Aprian, asal kota Garut. Saat ini, saya menempuh
+              pendidikan di UIN Sunan Gunung Djati dengan jurusan Teknik
+              Informatika. Saya memiliki Kegemaran dalam pengembangan web dan
+              mobile sangat mendalam. Perjalanan belajar pemrograman telah saya
+              jalani sejak masa sekolah menengah atas (SMA), walaupun pengalaman
+              saya di bidang ini masih terbatas, saya memiliki tekad kuat untuk
+              terus mengasah keterampilan ini ke tingkat yang lebih tinggi di
+              masa depan. Saya sangat antusias untuk dapat berkontribusi dalam
+              lingkungan profesional yang mendukung pertumbuhan dan
+              pembelajaran.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- Informasi Pribadi -->
+            <h2>Informasi Pribadi</h2>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>Fiki Aprian</td>
+              </tr>
+              <tr>
+                <th>Tanggal Lahir</th>
+                <td>17 Agustus 1945</td>
+              </tr>
+              <tr>
+                <th>Alamat</th>
+                <td rowspan="2">
+                  Jl. Lewo wetan, Ds. Lewo Baru, Kec. Malangbong, Kab. Garut,
+                  Jawa Barat
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- Pendidikan -->
+            <h2>Pendidikan</h2>
+            <table>
+              <tr>
+                <th>Gelar</th>
+                <th>Institusi</th>
+                <th>Tahun</th>
+              </tr>
+              <tr>
+                <td>Sarjana Teknik Informatika</td>
+                <td>Universitas Islam Negeri Sunan Gunung Jati</td>
+                <td>2021-2025</td>
+              </tr>
+              <tr>
+                <td>MIPA (Matematika dan Ilmu Pengetahuan Alam)</td>
+                <td>SMAN 9 Garut</td>
+                <td>2018-2021</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- Pengalaman Kerja -->
+            <h2>Pengalaman Kerja</h2>
+            <table>
+              <tr>
+                <th>Jabatan</th>
+                <th>Perusahaan</th>
+                <th>Tahun</th>
+              </tr>
+              <tr>
+                <td>FullStack Developer</td>
+                <td>Perusahaan FA-Tech</td>
+                <td>2020-2021</td>
+              </tr>
+              <tr>
+                <td>Backend Developer</td>
+                <td>Perusahaan FA-Tech</td>
+                <td>2021-sekarang</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- Kemampuan -->
+            <h2>Kemampuan</h2>
+            <ul>
+              <li>TailwindCSS, Bootstrap</li>
+              <li>Spring Boot, Laravel</li>
+              <li>ReactJS</li>
+              <li>Flutter</li>
+              <li>MySQL, PostgresSQL</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- Kontak -->
+            <h2>Kontak</h2>
+            <table>
+              <tr>
+                <th>Email</th>
+                <td>fikiaprian23@gmail.com</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th>Phone</th>
+                <td>+6287718447919</td>
+              </tr>
+              <tr>
+                <th>LinkedIn</th>
+                <td>
+                  <a
+                    href="https://www.linkedin.com/in/fiki-aprian-b8624b216/"
+                    target="_blank"
+                    >Fiki Aprian</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th>Web Portofolio</th>
+                <td>
+                  <a
+                    href="https://my-portofolio-fikiap23.vercel.app/"
+                    target="_blank"
+                    >My Portofolio</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
